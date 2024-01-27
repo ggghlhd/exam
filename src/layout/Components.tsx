@@ -26,9 +26,7 @@ class Components extends Component<{}, ComponentsState> {
     };
   }
   UkrHryvnaChanger() {
-    let totalPrice =
-      (this.state.priceFirst + this.state.priceSecond + this.state.priceThird) *
-      this.state.uaCoefficient;
+    let totalPrice = 2850 * this.state.uaCoefficient;
     this.setState({
       priceFirst: 750 * this.state.uaCoefficient,
       priceSecond: 850 * this.state.uaCoefficient,
@@ -49,9 +47,7 @@ class Components extends Component<{}, ComponentsState> {
     });
   }
   ZlotyChanger() {
-    let totalPrice =
-      (this.state.priceFirst + this.state.priceSecond + this.state.priceThird) *
-      this.state.zlCoefficient;
+    let totalPrice = 2850 * this.state.zlCoefficient;
     this.setState({
       priceFirst: 750 * this.state.zlCoefficient,
       priceSecond: 850 * this.state.zlCoefficient,
@@ -61,9 +57,7 @@ class Components extends Component<{}, ComponentsState> {
     });
   }
   BucksChanger() {
-    let totalPrice =
-      (this.state.priceFirst + this.state.priceSecond + this.state.priceThird) *
-      this.state.bucksCoefficient;
+    let totalPrice = 2850 * this.state.bucksCoefficient;
     this.setState({
       priceFirst: +(750 * this.state.bucksCoefficient).toFixed(2),
       priceSecond: +(850 * this.state.bucksCoefficient).toFixed(2),
